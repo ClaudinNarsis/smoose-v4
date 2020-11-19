@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    z-index: 1000;
+}
+
+.header {
+    z-index: 100;
+}
+
+.header.active {
+    background-color: black;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    float: left;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .image,
+    .images {
+        width: 100%;
+        height: auto;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgb(253, 209, 168);
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(253, 209, 168);
+    }
+    .navbar-links ul li {
+        text-align: center;
+        background-color: rgb(253, 209, 168);
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        background-color: rgb(253, 209, 168);
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    footer ul li a {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    footer ul {
+        list-style: none;
+        align-items: center;
+        float: center;
+        justify-content: center;
+    }
+    .images1 {
+        width: 50%;
+        height: 50%;
+        margin-left: 75px;
+    }
+}
+
+.images1 {
+    margin-left: 40px;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+    align-items: center;
+    float: left;
+    justify-content: left;
+}
+
+.partone {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.partone h2 {
+    margin-top: 168px;
+}
+
+footer li a {
+    color: black;
+}
+
+footer li a:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fab {
+    color: #ff5927;
+    font-size: 25px;
+}
+
+footer {
+    background-color: #e9ecef;
+}
+
+.sect2 {
+    padding: 20px 20px 40px 20px;
+    background-color: rgb(253, 209, 168);
+    border-radius: 25px;
+    position: relative;
+}
+
+.sect2 h4 {
+    padding: 30px 10px 5px 10px;
+    font-size: 48px;
+}
+
+.sect2 p {
+    padding: 10px;
+}
+
+row {
+    display: flex;
+    flex-direction: row;
+}
+
+.sect3 {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.sect3 h3 {
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.sect3 h5 {
+    font-size: 35px;
+    font-weight: 100;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.image {
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+.sect4 h2 {
+    font-size: 50px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.btn1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #ff5927;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.75);
+    margin-bottom: 20px;
+}
+
+.btn1:focus {
+    outline: none;
+}
+
+.btn1:hover {
+    background-color: #ff5927;
+    transition: 0.4s ease-in-out;
+}
+
+.btn2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    background: white;
+    border-radius: 25px;
+    color: #ff5927;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.75);
+    margin-bottom: 20px;
+}
+
+.btn2:focus {
+    outline: none;
+}
+
+.btn2:hover {
+    background-color: black;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.partone h2 {
+    padding-top: 75px;
+    font-size: 75px;
+    font-family: 'Bitter', serif;
+}
+
+.inter {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+.intern {
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.navbar ul li a:hover {
+    border-radius: 25px;
+    background-color: white;
+    color: #ff5927;
+    transition: 0.6s ease-in-out;
+}
+
+.navbar ul li a:focus {
+    outline: none;
+}
+
+.policy {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn3 {
+    border-radius: 25px;
+    color: white;
+    background-color: #ff5927;
+    padding: 30px;
+    margin: 19px;
+}
+
+.btn3 a {
+    color: white;
+    text-decoration: none;
+    font-size: 43px;
+}
+
+.btn3:focus {
+    outline: none;
+}
+
+.btn3:hover {
+    background-color: white;
+    color: #ff5927;
+    transition: 0.6s ease-in-out;
+}
+
+.btn3 a:hover {
+    color: #ff5927;
+    transition: 0.6s ease-in-out;
+}
+
+header {
+    background-image: url(./images/Group\ 1.png);
+    background-position: center;
+    color: white;
+}
+
+.sect1 h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.accordion:hover {
+    background-color: white;
+    color: #ff5927;
+    transition: 0.6s ease-in-out;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+body {
+    min-height: 200vh;
+}
+
+.navbar-default {
+    transition: 500ms ease;
+    background: transparent;
+}
+
+.navbar-default.scrolled {
+    background: white;
+}
+
+.forms {
+    border-radius: 25px;
+}
+
+.forms:outline {
+    outline: none;
+}
+
+.about h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #ff5927;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 44px;
+    font-weight: 500;
+    color: #ff5927;
+    padding: 20px 0px;
+}
+
+.contact {
+    padding: 4%;
+    height: 400px;
+    height: 100vh;
+}
+
+.contacts {
+    background: rgb(253, 209, 168);
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.contact-info {
+    margin-top: 10%;
+}
+
+.contact-info img {
+    margin-bottom: 15%;
+}
+
+.contact-info h2 {
+    margin-bottom: 10%;
+}
+
+.col-md-9 {
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form button {
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+
+.contact-form button:focus {
+    box-shadow: none;
+}
+
+.header {
+    padding: 10px 16px;
+    background: transparent;
+    color: #f1f1f1;
+}
+
+
+/* Page content */
+
+.content {
+    padding: 16px;
+}
+
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion1 {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.accordion1:hover {
+    background-color: white;
+    color: #ff5927;
+    transition: 0.6s ease-in-out;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel1 {
+    padding: 20px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}

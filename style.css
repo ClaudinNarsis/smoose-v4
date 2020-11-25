@@ -334,13 +334,34 @@ html {
     transition: 0.4s ease-in-out;
 }
 
+.btn22 {
+    background: white;
+    border-radius: 25px;
+    color: #ff5927;
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.75);
+}
+
+.btn22:focus {
+    outline: none;
+}
+
+.btn22:hover {
+    background-color: black;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .partone h2 {
     padding-top: 75px;
-    font-size: 3em;
+    font-size: 5em;
     font-family: 'Bitter', serif;
 }
 
